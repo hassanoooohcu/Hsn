@@ -1,0 +1,14 @@
+{
+  "appName": "تطبيق التسبيح والحديقة",
+  "htmlContent": {
+    "type": "raw",
+    "content": "<!-- هنا نضع كل محتوى HTML داخل وسم <body> --> <div class=\"app-wrapper\"><header class=\"app-header\"><div class=\"header-counts\"><div id=\"total-today-count\" class=\"total-count\">مجموع اليوم: 0</div><div id=\"total-all-time-count\" class=\"total-count all-time\">الإجمالي: 0</div></div><div id=\"date-display\" class=\"date-display\"></div></header><div id=\"garden-area\" class=\"garden-area\"></div><div class=\"content-container\"><div class=\"top-controls\"><button id=\"set-goal-btn\" class=\"control-btn\">🎯</button><div class=\"dhikr-dropdown\"><button id=\"current-dhikr-btn\" class=\"current-dhikr-btn\"><span id=\"current-dhikr-text\"></span><svg class=\"dropdown-arrow\" viewBox=\"0 0 24 24\"><path d=\"M7 10l5 5 5-5z\"></path></svg></button><div id=\"dhikr-list\" class=\"dhikr-list\"></div></div><button id=\"add-dhikr-btn\" class=\"control-btn\">➕</button></div><div class=\"counter-info\"><div class=\"counter-display goal\"><span id=\"goal-progress-span\">0 / 100</span></div></div><div class=\"main-action\"><button id=\"main-counter-btn\" class=\"main-counter-btn\"><div class=\"btn-border\"></div><span id=\"counter-display-span\" class=\"main-text\">0</span><span class=\"sub-text\">اضغط للتسبيح</span></button></div></div><div id=\"toast-notification\" class=\"toast-notification\"><span id=\"toast-message\"></span></div><div id=\"modal-overlay\" class=\"modal-overlay\"><div id=\"add-dhikr-modal\" class=\"modal-content\"><h2>إضافة ذكر جديد</h2><input type=\"text\" id=\"new-dhikr-text\" placeholder=\"نص الذكر...\"><input type=\"number\" id=\"new-dhikr-goal\" placeholder=\"الهدف اليومي...\" value=\"100\"><div class=\"modal-actions\"><button id=\"cancel-add-dhikr\" class=\"modal-btn cancel-btn\">إلغاء</button><button id=\"confirm-add-dhikr\" class=\"modal-btn confirm-btn\">إضافة</button></div></div><div id=\"set-goal-modal\" class=\"modal-content\"><h2>تحديد الهدف اليومي</h2><input type=\"number\" id=\"new-goal-input\" placeholder=\"الهدف الجديد...\"><div class=\"modal-actions\"><button id=\"cancel-set-goal\" class=\"modal-btn cancel-btn\">إلغاء</button><button id=\"confirm-set-goal\" class=\"modal-btn confirm-btn\">تحديد</button></div></div></div></div>"
+  },
+  "cssFiles": [
+    "https://raw.githubusercontent.com/hassanoooohcu/Hsn/main/Exams/style.css",
+    "https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Lalezar&family=Amiri:wght@700&display=swap"
+  ],
+  "jsFiles": [
+    "https://raw.githubusercontent.com/hassanoooohcu/Hsn/main/Exams/script.js"
+  ]
+}
