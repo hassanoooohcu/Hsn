@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حديقة الذكر</title>
+    <link rel="stylesheet" href="tasbih.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Lalezar&family=Amiri:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
 
+    <div class="app-wrapper">
+        <header class="app-header">
+            <a href="../index.html" class="back-btn">العودة</a>
+            <div class="header-counts">
+                <div id="total-today-count" class="total-count">مجموع اليوم: 0</div>
+                <div id="total-all-time-count" class="total-count all-time">الإجمالي: 0</div>
+            </div>
+            <div id="date-display" class="date-display"></div>
+        </header>
+
+        <!-- الحديقة العلوية -->
+        <div id="garden-area" class="garden-area">
+            <div class="sky"><div class="sun"></div></div>
+            <div class="ground"></div>
+            <!-- النخيل هنا -->
+        </div>
+
+        <!-- المحتوى الرئيسي -->
+        <div class="content-container">
+            <div class="top-controls">
+                <button id="add-dhikr-btn" class="control-btn" title="إضافة ذكر جديد">➕</button>
+                <div class="dhikr-dropdown">
+                    <button id="current-dhikr-btn" class="current-dhikr-btn">
+                        <span id="current-dhikr-text"></span>
+                        <svg class="dropdown-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"></path></svg>
+                    </button>
+                    <div id="dhikr-list" class="dhikr-list">
+                        <!-- الأذكار هنا -->
+                    </div>
+                </div>
+                <button id="set-goal-btn" class="control-btn" title="تحديد الهدف">🎯</button>
+            </div>
+
+            <div class="counter-info">
+                <div class="counter-display palms">
+                    <span id="counter-display-span">0</span>
+                    <span class="palm-icon-counter">🌴</span>
+                </div>
+                <div id="goal-display" class="counter-display goal">
+                    <span>الهدف:</span>
+                    <span id="goal-progress-span">0 / 100</span>
+                </div>
+            </div>
+
+            <div class="main-action">
+                <button id="main-counter-btn" class="main-counter-btn">
+                    <div class="btn-border"></div>
+                    <span class="main-text">اذكر الله</span>
+                    <span class="sub-text">لِتُغرس لك نخلة في الجنة</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- النوافذ المنبثقة -->
+    <div id="modal-overlay" class="modal-overlay">
+        <!-- نافذة إضافة ذكر -->
+        <div id="add-dhikr-modal" class="modal-content">
+            <h2>إضافة ذكر جديد</h2>
+            <input type="text" id="new-dhikr-text" placeholder="اكتب الذكر هنا...">
+            <input type="number" id="new-dhikr-goal" placeholder="أدخل العدد المستهدف (مثال: 100)">
+            <div class="modal-actions">
+                <button id="cancel-add-dhikr" class="modal-btn cancel-btn">إلغاء</button>
+                <button id="confirm-add-dhikr" class="modal-btn confirm-btn">إضافة</button>
+            </div>
+        </div>
+        <!-- نافذة تحديد الهدف -->
+        <div id="set-goal-modal" class="modal-content">
+            <h2>تحديد الهدف</h2>
+            <p>حدد العدد المستهدف للذكر الحالي:</p>
+            <input type="number" id="new-goal-input" placeholder="أدخل الهدف الجديد">
+            <div class="modal-actions">
+                <button id="cancel-set-goal" class="modal-btn cancel-btn">إلغاء</button>
+                <button id="confirm-set-goal" class="modal-btn confirm-btn">حفظ</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- عنصر رسالة التهنئة -->
+    <div id="toast-notification" class="toast-notification">
+        <span id="toast-message"></span>
+    </div>
+
+    <script src="tasbih.js"></script>
+</body>
+          </html>
